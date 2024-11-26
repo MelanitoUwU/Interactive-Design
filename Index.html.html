@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Montserrat Typeface</title>
+        <link rel="stylesheet" href="style45.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="JAVASCHU.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <div class="mainpage">
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="MONTSERRAT"> MONTSERRAT</label>
+        </div>
+       
+        <div class="info-section" id="about type">
+            <div class='orange'>
+                <div>
+   
+                    <h1>Learn about Montserrat Typeface UwU</h1>
+                    <p>Montserrat is a geometric sans-serif typeface designed by Julieta Ulanovsky in 2011.
+                    It was inspired by the old posters and signs in the Montserrat neighborhood of Buenos Aires, Argentina.
+                    The typeface is widely used for its clean lines and modern aesthetic. </p>
+
+
+                    <p>Montserrat comes in a variety of <strong>weights</strong> and styles, making it versatile for different design needs.</p>
+                    
+               
+                </div>
+            </div>
+        </div>
+                       
+        <div class="image">
+            <img class="image-1" src="julieta copy.png" alt="Julieta Ulanovsky">
+            <div class="image-overlay image-overlay-primary">
+                <div class="image-title"> Julieta Ulanovsky</div>
+                <p class="image-descrption">
+                    Is an Argentine graphic and typeface designer based in Buenos Aires.
+                    Her work on Montserrat has made it a popular choice among
+                    web designers and has contributed to its widespread use on websites across the world.
+                </p>
+            </div>
+        </div>
+
+
+        <div> <h1 class="variables">Variables</h1>
+            <h2 class="elparra">18 variables including Italic versions for each weight.</h2>
+                <div class="weights">
+                    
+                    <div style="font-family: 'Montserrat'; font-weight: 900;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 800;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 700;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 600;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 500;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 400;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 300;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 200;">Julieta Ulanovsky</div>
+                    <div style="font-family: 'Montserrat'; font-weight: 100;">Julieta Ulanovsky</div>
+                     
+                </div>
+        </div>
+       
+        <div class="info-section" id="creator">
+            <section class=" white">
+        </div>
+
+            <div class="titulo">
+                <h1>Play with the SIZE</h1>
+
+                <div class="slider-container">
+                    <div class="slider-label">Font Size</div>
+                    <input id="size-slider" type="range" min="12" max="200" value="50"/>
+                </div>
+            
+                <div class="slider-container">
+                    <div class="slider-label">Font Weight</div>
+                    <input id="weight-slider" type="range" min="100" max="900" step="100" value="400"/>
+                </div>
+                
+            <div class="paragraph1" id="paragraph"> 
+                Montserrat is one of the oldest neighborhoods in Buenos Aires, Argentina.
+                It was named after the Parroquia de Nuestra Señora de Montserrat (Parish of Our Lady of Montserrat),
+                which was built in 1769.
+            </div>
+        
+            <script>
+                const paragraphElement = document.getElementById('paragraph');
+                const sizeSlider = document.getElementById('size-slider');
+                const weightSlider = document.getElementById('weight-slider');
+        
+                sizeSlider.addEventListener('input', () => {
+                    paragraphElement.style.fontSize = sizeSlider.value + 'px';
+                });
+        
+                weightSlider.addEventListener('input', () => {
+                    paragraphElement.style.fontWeight = weightSlider.value;
+                });
+            </script>
+      
+
+    <div id="hachi" class="hachi">
+        <div id="hachi">Lazy Hachita</div>
+    </div>    
+           
+    <div class="info-section" id="why-loved">
+        <section class="lovedesign">
+            <div>
+                <h1>Why Montserrat Typeface is loved by designers?</h1>
+           
+            <div class="animated-text">
+                <div></div>It's <span></span>
+            </div>
+            </div>
+    </div>
+
+    <div class="alfabeto">
+        <div id="alfabetoletras"> a b c d e f g h i j k l m n ñ o p q r s t u v w x y z</div>
+
+
+
+
+    </body>
+</html>

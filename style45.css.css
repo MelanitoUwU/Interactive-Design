@@ -1,0 +1,389 @@
+/* *{border: 1px solid red;}*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}  
+
+* {
+    border: 2px;
+}
+
+/* Main Page */
+.mainpage {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    top: 0px;
+    background-color: #E68369;
+    padding: 10px;
+    color: #ECCEAE;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -8px;
+    font-weight: bolder;
+}
+
+.toggle {
+    display: none;
+}
+
+.MONTSERRAT {
+    font-size: 8px;
+    transition: font-size 0.5s ease;
+    cursor: pointer;
+}
+
+.toggle:checked + .MONTSERRAT {
+    font-size: 169px;
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s;
+}
+
+/* Info Section */
+.info-section#abouttype {
+    width: auto;
+    height: 980px;
+    justify-content: space-between;
+}
+
+/* Main Page */
+.mainpage {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    top: 0px;
+    background-color: #E68369;
+    padding: 10px;
+}
+
+.orange {
+    min-height: 10vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #E68369;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #ECCEAE;
+    height: 800px;
+    margin: -8px;
+    object-fit: right;
+}
+
+.orange h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: center;
+}
+
+.orange p {
+    width: 40%;
+    font-size: 25px;
+    padding: 10px;
+    color: #522258;
+    text-align: left;
+    font-weight: medium;
+}
+
+/* photo*/
+.image {
+    position: absolute;
+    top: 900px;
+    right: 303px;
+    width: 380px;
+}
+
+.image-1 {
+    display: block;
+    width: 160%;  
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s;
+    color: #522258;
+    font-size: 25px;
+    text-align: center;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.image-overlay-primary {
+    background: #ECCEAE;
+}
+
+.image-overlay:hover > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image-description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+/* Love Section */
+.info-section#why-loved {
+    height: 800px;
+    width: auto;
+    position: relative;
+    top: 98px;
+    background-color: #ECCEAE;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -30px;
+}
+
+.info-section#why-loved h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #E68369;
+}
+
+.info-section#why-loved p {
+    font-size: 30px;
+    text-align: center;
+    color: #E68369;
+}
+
+.animated-text {
+    font-size: 50px;
+    font-weight: 600;
+    color: #FBF6E2;
+    min-width: 200px;
+    text-align: center;
+    object-position: center;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Modern";
+    color: #522258;
+    animation: words 15s infinite;
+}
+
+.animated-text span::after {
+    content:"";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 90%;
+    background-color: #ECCEAE;
+    border-left: 2px solid #522258;
+    right: -8px;
+    animation: cursor .8s infinite, typing 15s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #522258;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Modern";
+    }
+    21%, 40% {
+        content: "Clean";
+    }
+
+    41%, 60% {
+        content: "Versatile";
+    }
+    61%, 80% {
+        content: "Geometric";
+    }
+    81%, 100% {
+        content: "Readable";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+/*weights*/
+.variables {
+    width: auto;
+    height: 90px;
+    margin: -10px;
+    padding-top: 50px;
+    text-align: center;
+    color: #522258;
+    font-size: 80px;
+    background-color: #E68369;
+}
+
+.elparra {
+    font-size: 2em;
+    color: #ECCEAE;
+    background-color: #E68369;
+    text-align: center;
+    margin: -8px;
+    padding: 40px;
+    font-weight: 200; 
+    transition: all 0.25s ease-in-out;
+}
+
+.elparra h2 {
+    font-size: 1em;
+}
+
+.elparra div:hover {
+    font-weight: 900;
+    color: #522258;
+}
+
+
+.weights {
+    width: auto;
+    height: 1200px;
+    margin: -20px;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    color: #522258;
+    background-color: #E68369;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.weights div:hover { 
+    font-style: italic;
+    color:#ECCEAE;
+}
+
+.differentvariables {
+    width: auto;
+    height: 980px;
+    color: rgb(162, 95, 14);
+    text-align: right;
+}
+
+
+/*slider face*/
+
+.titulo{
+    background-color: #ECCEAE;
+    padding-top: 50px;
+    margin: -8px;
+    color:#522258;
+    font-size: 50px;
+    text-align: center;
+}
+.paragraph1 {
+width: auto;
+height: 900px;
+margin: -10px;
+padding-top: 50px;
+text-align: center;
+color: #522258;
+font-size: 50px;
+background-color:#ECCEAE;
+}
+
+.elparra {
+font-size: 2em;
+color: #ECCEAE;
+background-color: #E68369;
+text-align: center;
+margin: -8px;
+padding: 40px;
+font-weight: 200;
+transition: all 0.25s ease-in-out;
+}
+
+.elparra h2 {
+font-size: 1em;
+}
+
+.elparra div:hover {
+font-weight: 900;
+color: #522258;
+}
+
+.paragragh {
+font-size: 20px;
+font-weight: 400;
+transition: all 0.3s ease;
+background-color: #ECCEAE;
+}
+
+.slider-container {
+margin: 0px 0;
+color:#E68369;
+}
+
+.slider-label {
+font-size: 50px;
+margin-bottom: 10px;
+color:#E68369;
+}
+
+/*section 5*/
+.hachi{
+    width: auto;
+    height: 800px;
+    background-color:#522258;
+    font-size: 200px;
+    font-weight: 500;
+    color:#ECCEAE;
+    text-align: center;
+    padding-top: 10%;
+    cursor:pointer; 
+}
+
+/* el alfabet */
+.alfabeto{
+    width: auto;
+    height: 800px;
+    background-color:#E68369; 
+    color:#522258;
+}
